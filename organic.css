@@ -1,0 +1,499 @@
+
+    /* ORGANIC FOOD CSS */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&family=Ubuntu:ital@0;1&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #16b978;
+    --second-color: #092b54;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+img {
+    width: 100%;
+}
+
+*::selection {
+    color: #fff;
+    background: var(--main-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    transition: 0.2s;
+    background-color: var(--second-color);
+}
+
+header.active {
+    background: var(--second-color);
+    box-shadow: 0 0 4px rgba(67, 228, 206, 0.15);
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.logo img {
+    width: 75px;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+.logo pre{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--second-color);
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.navbar a :hover {
+    color: rgb(170, 23, 23);
+    background: rgb(32, 189, 102);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url("C:/Users/Shree/.vscode/projects/organic food/images/background 3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-img {
+    flex: 1 1 17rem;
+    border-radius: 40px;
+}
+
+.home-text span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    color: var(--second-color);
+}
+
+.home-text p {
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+    color: #fff;
+    background: var(--main-color);
+}
+/* buy items */
+/* #buy{
+    font-weight: bold;
+    color: #fff;
+    height: 10px;
+    width: 20px;
+} */
+
+/* about section start */
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url("C:/Users/Shree/.vscode/projects/organic food/images/background 1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.about-container {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    border-top: 6px solid var(--main-color);
+    padding: 20px;
+    gap: 2rem;
+}
+
+.box-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.about-box {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 8rem;
+    display: flex;
+    text-align: center;
+}
+
+.about-box h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    margin: 0 0 0.5rem;
+}
+
+.about-box h2 {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    letter-spacing: 1px;
+}
+
+/* shop section start */
+
+.shop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background: url("C:/Users/Shree/.vscode/projects/organic food/images/background 4.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 2rem;
+    color: var(--second-color);
+    margin-bottom: 0.5rem;
+}
+.shop-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.shop-box{
+    position: relative;
+    flex: 1 1 17rem;
+    box-shadow: 0 4px 4px black;
+    border-radius: 1rem;
+    height: auto;
+}
+.shop-img{
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.shop-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.shop-img img:hover{
+    transform: scale(1.1);
+    transition: o.5s;
+}
+.shop-box h3{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 10px;
+}
+.shop-box h2{
+    font-size: 1.2rem; 
+    color: var(--main-color);
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.shop-box .sellbutton{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+    width: 70px;
+    color: black;
+    background: var(--main-color);
+    border-radius: 4px;
+}
+.shop-box .sellbutton:hover{
+    right: 15px;
+    transition: o.5s;
+}
+
+/* customer-container */
+
+.customer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem; 
+}
+.customer-container .box{
+    flex: 1 1 16rem;
+    text-align: center;
+    box-shadow: 0px 4px 0px 4px black;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.box img{
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    object-fit: cover;
+    border: 2px solid var(--second-color);
+}
+.box .bx{
+    color: var(--main-color);
+    margin-top: 0.5rem;
+}
+.box p{
+    margin: 0.5rem 0 1rem;
+}
+.box h2{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    letter-spacing: 1px;
+}
+
+/* .contact-container */
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.contact-info{
+    flex: 1 1 20rem;
+}
+.contact-form{
+    flex: 1 1 20rem;
+    display: flex;
+    justify-content: center;
+}
+.contact-info h2{
+    font-size: 1.7rem;
+    color: var(--second-color);
+}
+.contact-info p{
+    margin: 0.5rem 0 1rem;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+}
+.address i{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+.address span{
+    font-size:1rem;
+    margin-left: 1rem;
+}
+.social{
+    margin-top: 1rem;
+}
+.social a{
+    font-size: 24px;
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+.social a:hover{
+    color: var(--second-color);
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+form input,textarea{
+    width: 100%;
+    padding: 17px;
+    border-radius: 0.5rem;
+    outline: none;
+    margin-bottom: 1rem;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 4px 4px 2px black;
+}
+#btn_submit{
+    font-weight: bold;
+    color: grey;
+    width: 100%;
+    padding: 17px;
+    border-radius: 0.5rem;
+    outline: none;
+    margin-bottom: 1rem;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 4px 4px 2px black;
+}
+form input ::placeholder,
+textarea::placeholder{
+    color :var(--main-color);
+}
+form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contact
+{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.social a{
+   font-size: 27px;
+   margin: 0.5rem; 
+}
+.social a .box{
+ padding: 5px;
+ color: #fff;
+ background: #000000;
+ border-radius:50% ; 
+}
+.social a .bx:hover
+{
+    background: var(--main-color);
+}
+.links
+{
+   margin: 1rem 0 1rem; 
+}
+.links a
+{
+    margin:  1rem; 
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+ }
+ .links a:hover{
+   color: var(--main-color);
+ }
+
+
+
+ /* sell page css */
+
+.buyform {
+    margin: 30px;
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 5px 4px 4px 2px black;
+    background-color: rgb(144,238,144);
+    border-radius: 10px;
+}
+
+.modal fade td {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.modal fade button {
+    margin: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+/* .model fade .demo{
+    font-size: 20px;
+    color: rgb(8, 252, 8);
+    font-weight: bold;
+    font-family: sans-serif;
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
